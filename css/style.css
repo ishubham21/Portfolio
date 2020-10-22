@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kufam:wght@500;600;700;800&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     font-family: 'Montserrat';
     font-weight: 400;
@@ -35,13 +41,25 @@ body{
 
 
 /*Navbar*/
-
+.navbar{
+    justify-content: flex-end;
+    min-width: 100vw;
+    padding: 0;
+}
+.navbar-brand{
+    margin-right: auto;
+    font-size: 3em;
+    font-weight: 800;
+    font-family: 'Great Vibes';
+    letter-spacing: 3px;
+    color: #000;
+}
     /*Navbar Hamburger*/
 .nav-ham span{
     display: block;
     height: 3.5px;
     color: #000;
-    background-color: #fff;
+    background-color: #000;
     margin: 6px 0;
     border-radius: 50%;
     margin-left: auto;
@@ -61,9 +79,12 @@ body{
     top: 0;
     bottom: 0;
     height: 100vh;
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
+
 
 /*Navbar ends here*/
 
