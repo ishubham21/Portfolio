@@ -4,4 +4,3 @@
 //     loader.classList.add('load-finish');  
 // });
 //loader ends here
-
