@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kufam:wght@500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800&display=swap');
 
 *{
     margin: 0;
@@ -48,25 +49,24 @@ body{
 }
 .navbar-brand{
     margin-right: auto;
-    font-size: 3em;
-    font-weight: 800;
-    font-family: 'Great Vibes';
-    letter-spacing: 3px;
+    font-size: 2.5em;
+    font-weight: 700;
     color: #000;
+    text-transform: uppercase;
 }
 .navbar-brand span:first-child{
     color: #fff;
 }
 .navbar-brand span:last-child{
     position: relative;
-    left: -17px;
+    left: -12px;
 }
 .navbar-brand::after{
     position: absolute;
-    top: 45%;
-    left: 43px;
-    width: 60px;
-    height: 60px;
+    top: 50%;
+    left: 37px;
+    width: 45px;
+    height: 45px;
     content: '';
     background: #3e64ff;
     z-index: -1;
@@ -97,7 +97,26 @@ body{
 .nav-ham span:nth-child(3){
     width: 35px;
 }
-
+@media (max-width: 320px){
+    .navbar-brand span:last-child{
+        display: none;
+    }
+}
+@media (max-width: 450px){
+    .navbar-brand{
+        font-size: 2em;
+    }
+    .navbar-brand::after{
+        top: 50%;
+        left: 40px;
+        width: 35px;
+        height: 35px;
+    }
+    .navbar-brand span:last-child{
+        position: relative;
+        left: -10px;
+    }
+}
 .nav-menu{
     position: absolute;
     top: 0;
