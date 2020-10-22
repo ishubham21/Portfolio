@@ -11,7 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: opacity 2s 2s ease-in-out;
+    transition: opacity 3s 3s ease-in-out;
 }
 .loader img{
     width: 60%;
@@ -21,6 +21,10 @@
     opacity: 0;
     pointer-events: none;
 }
+/*Loader Ends Here*/
+
+
+/*Animations*/
 @keyframes fade_in{
     0%{
         opacity: 0;
