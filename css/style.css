@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
 
+body{
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+
 /*Loader*/
 .loader{
     background-color: #000;
@@ -11,7 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: opacity 3s 3s ease-in-out;
+    transition: opacity 2s 3s ease-in-out;
 }
 .loader img{
     width: 60%;
@@ -23,6 +28,39 @@
 }
 /*Loader Ends Here*/
 
+/*Navbar*/
+.navbar{
+    min-width: 100vw;
+}
+.navbar .navbar-brand{
+    font-weight: 800;
+    font-size: 2em;
+}
+.navbar .navbar-brand span:nth-child(1){
+    background-color: blue;
+    color: #fff;
+    border-radius: 100%;
+    padding: 0.5em;
+}
+.navbar .navbar-brand span:nth-child(2){
+    position: relative;
+    left: -23px;
+    color: #000;;
+}
+.navbar .nav-ul{
+    width: 100%;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navbar .nav-li{
+    list-style: none;
+}
+.navbar .nav-li a{
+    text-decoration: none;
+}
+
+/*Navbar ends here*/
 
 /*Animations*/
 @keyframes fade_in{
