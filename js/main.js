@@ -10,7 +10,15 @@ navHam();
 function navHam(){
     var hamBurger = document.querySelector(".nav-container");
     var navMenu = document.querySelector(".nav-menu");
+    var navLinks = document.querySelectorAll(".nav-item");
+
     hamBurger.addEventListener("click", () =>{
         navMenu.classList.toggle("make-visible");
     });
+    
+    for (let i = 0; i < navLinks.length; i++) {
+        navLinks[i].addEventListener("click", () => {
+            navMenu.classList.remove("make-visible");
+        });
+    }
 }
