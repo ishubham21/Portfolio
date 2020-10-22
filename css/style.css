@@ -11,7 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: opacity 2s 4s ease-in-out;
+    transition: opacity 2s 2s ease-in-out;
 }
 .loader img{
     width: 60%;
