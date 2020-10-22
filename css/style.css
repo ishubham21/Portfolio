@@ -11,11 +11,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: opacity 1s ease;
+    transition: opacity 2s 4s ease-in-out;
 }
 .loader img{
     width: 60%;
-    animation: fade_in 4s; 
+    animation: fade_in 5s; 
 }
 .load-finish{
     opacity: 0;
