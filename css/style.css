@@ -54,6 +54,30 @@ body{
     letter-spacing: 3px;
     color: #000;
 }
+.navbar-brand span:first-child{
+    color: #fff;
+}
+.navbar-brand span:last-child{
+    position: relative;
+    left: -17px;
+}
+.navbar-brand::after{
+    position: absolute;
+    top: 45%;
+    left: 43px;
+    width: 60px;
+    height: 60px;
+    content: '';
+    background: #3e64ff;
+    z-index: -1;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}
     /*Navbar Hamburger*/
 .nav-ham span{
     display: block;
