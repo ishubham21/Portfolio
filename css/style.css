@@ -28,39 +28,55 @@ body{
 }
 /*Loader Ends Here*/
 
+
+
+
+
+
+
 /*Navbar*/
-.navbar{
-    min-width: 100vw;
+
+    /*Navbar Hamburger*/
+.nav-ham span{
+    display: block;
+    height: 3.5px;
+    color: #000;
+    background-color: #fff;
+    margin: 6px 0;
+    border-radius: 50%;
+    margin-left: auto;
 }
-.navbar .navbar-brand{
-    font-weight: 800;
-    font-size: 2em;
+.nav-ham span:nth-child(1){
+    width: 30px;
 }
-.navbar .navbar-brand span:nth-child(1){
-    background-color: blue;
-    color: #fff;
-    border-radius: 100%;
-    padding: 0.5em;
+.nav-ham span:nth-child(2){
+    width: 25px;
 }
-.navbar .navbar-brand span:nth-child(2){
-    position: relative;
-    left: -23px;
-    color: #000;;
+.nav-ham span:nth-child(3){
+    width: 35px;
 }
-.navbar .nav-ul{
-    width: 100%;;
+
+.nav-menu{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
-}
-.navbar .nav-li{
-    list-style: none;
-}
-.navbar .nav-li a{
-    text-decoration: none;
 }
 
 /*Navbar ends here*/
+
+
+
+
+
+
+
+
+
+
+
 
 /*Animations*/
 @keyframes fade_in{
