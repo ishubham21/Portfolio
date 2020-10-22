@@ -10,9 +10,10 @@
 body{
     font-family: 'Montserrat';
     font-weight: 400;
+    scroll-behavior: smooth;
 }
 
-/*Loader*/
+/*-------------------------------------------Loader------------------------------------------------*/
 .loader{
     background-color: #000;
     min-height: 100vh;
@@ -34,10 +35,11 @@ body{
     opacity: 0;
     pointer-events: none;
 }
-/*Loader Ends Here*/
+/*-------------------------------------------Loader Ends Here---------------------------------------*/
 
 
-/*Navbar*/
+
+/*-----------------------------------------------Navbar---------------------------------------------*/
 .navbar{
     justify-content: flex-end;
     min-width: 100vw;
@@ -46,7 +48,7 @@ body{
 }
 .navbar-brand{
     margin-right: auto;
-    font-size: 2.2em;
+    font-size: 1.6em;
     font-weight: 700;
     color: #000;
     text-transform: uppercase;
@@ -56,14 +58,14 @@ body{
 }
 .navbar-brand span:last-child{
     position: relative;
-    left: -10px;
+    left: -7.5px;
 }
 .navbar-brand::after{
     position: absolute;
     top: 50%;
     left: 37px;
-    width: 45px;
-    height: 45px;
+    width: 36px;
+    height: 36px;
     content: '';
     background: #3e64ff;
     z-index: -1;
@@ -75,10 +77,15 @@ body{
     -ms-border-radius: 50%;
     border-radius: 50%;
 }
-    /*Navbar Hamburger*/
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
 .nav-ham span{
     display: block;
-    height: 3.5px;
+    height: 2px;
     color: #000;
     background-color: #000;
     margin: 6px 0;
@@ -94,42 +101,53 @@ body{
 .nav-ham span:nth-child(3){
     width: 35px;
 }
-.nav-menu{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 @media (max-width: 320px){
     .navbar-brand span:last-child{
         display: none;
     }
 }
-@media (max-width: 450px){
-    .navbar-brand{
-        font-size: 2em;
-    }
-    .navbar-brand::after{
-        top: 50%;
-        left: 40px;
-        width: 35px;
-        height: 35px;
-    }
-    .navbar-brand span:last-child{
-        position: relative;
-        left: -10px;
-    }
-}
-
 .nav-menu{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
     z-index: 2;
+    background-color: #3e64ff;
 }
-/*Navbar ends here*/
+.nav-item{
+    font-size: 1.2em;
+    padding: 0.4em 0;
+}
+.nav-item a{
+    color: #fff;
+}
+.nav-item a:hover{
+    text-decoration: none;
+}
+.make-visible{
+    display: flex;
+}
+/*--------------------------------------------Navbar ends here---------------------------------*/
+
+
+
+/*--------------------------------------------This is overlay------------------------------------*/
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #3e64ff;
+    width: 50%;
+    opacity: 0.1;
+}
+/*------------------------------------------------------------------------------------------------*/
 
 
 
@@ -139,10 +157,38 @@ body{
 
 
 
+/*-------------------------------------------------------------Underline from left---------------------------------------------*/
+.underline-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.underline-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #fff;
+  height: 2px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.underline-left:hover:before, .underline-left:focus:before, .underline-left:active:before {
+  right: 40%;
+}
 
 
-
-/*Animations*/
+/*---------------------------------------------------------------------Animations--------------------------------------------------*/
 @keyframes fade_in{
     0%{
         opacity: 0;
