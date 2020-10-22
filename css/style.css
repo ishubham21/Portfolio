@@ -1,9 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+
+/*Loader*/
 .loader{
     background-color: #000;
-    min-height: 100vh;;
+    min-height: 100vh;
+    min-width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1s ease;
 }
 .loader img{
-    width: 50%;
-    margin: auto;
+    width: 60%;
+    animation: fade_in 4s; 
+}
+.load-finish{
+    opacity: 0;
+    pointer-events: none;
+}
+@keyframes fade_in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
