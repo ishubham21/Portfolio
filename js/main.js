@@ -1,8 +1,8 @@
 //Get rid of Preloader
-// window.addEventListener('load', () => {
-//     var loader = document.querySelector(".loader"); //on class 'loader'
-//     loader.classList.add('load-finish');  
-// });
+window.addEventListener('load', () => {
+    var loader = document.querySelector(".loader"); //on class 'loader'
+    loader.classList.add('load-finish');  
+});
 //loader ends here
 
 //on click ham-burger events
@@ -15,7 +15,7 @@ function navHam(){
     hamBurger.addEventListener("click", () =>{
         navMenu.classList.toggle("make-visible");
     });
-    
+
     for (let i = 0; i < navLinks.length; i++) {
         navLinks[i].addEventListener("click", () => {
             navMenu.classList.remove("make-visible");
