@@ -201,12 +201,14 @@ body{
 /*------------------------------------------------------------------------------------------------*/
 section{
     width: 100%;
-    min-height: 100vh;
     overflow-x: hidden;
 }
 /*------------------------------------------------------------------------------------------------*/
 
 /*---------------------------------------------Home------------------------------------------------*/
+#home{
+    min-height: 100vh;
+}
 #home p{
     font-size: 2em;
     font-weight: 700;
@@ -270,6 +272,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    min-height: 100vh;
 }
 #about .row{
     width: 80%;
@@ -284,6 +287,52 @@ section{
 
 
 /*----------------------------------------Projects--------------------------------------------------*/
+#projects .row{
+    width: 90%;
+    margin: auto;
+}
+#projects .row .col-10 .col-12{
+    box-shadow: 0rem 0.05rem 0.15rem rgba(0, 0, 0, 0.15) !important;
+    padding: 20px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+#projects .row h1{
+    font-weight: 700;
+    color: #3e64ff;
+}
+#projects .row h6{
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+#projects .row img{
+    width: 18%;
+    margin: auto;
+}
+#projects .row hr{
+    width: 20%; 
+    margin: auto;
+    background-color: #3e64ff;
+    padding: 0.03em;
+    border-radius: 30%;
+    transition: 0.4s;
+}
+#projects .row p{
+    font-size: 15px;
+}
+#projects .row .col-12 a{
+    text-decoration: none;
+}
+#projects .col-10 i{
+    transition: 0.3s;
+}
+#projects .col-10:hover .col-12{
+    transform: translateY(-10px);
+}
+#projects .col-10:hover i{
+    transform: scale(1.2);
+}
 
 
 /*--------------------------------------Underline from left-----------------------------------------*/
@@ -316,7 +365,37 @@ section{
   right: 40%;
 }
 /*-------------------------------------------------------------------------------------------------*/
-
+/* Underline From Center */
+.underline-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.underline-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: -2.5px;
+  background: #3e64ff;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.underline-center:hover:before, .underline-center:focus:before, .underline-center:active:before {
+  left: 0;
+  right: 0;
+}
+/*-------------------------------------------------------------------------------------------------*/
 
 /*---------------------------------------------------------------------Animations--------------------------------------------------*/
 @keyframes fade_in{
