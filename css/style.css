@@ -256,14 +256,17 @@ section{
 #home .btm-arw span:nth-child(1){
     width: 12px;
     transform: rotate(45deg) translate(14px, 11px);
+    -webkit-transform: rotate(45deg) translate(14px, 11px);
 }
 #home .btm-arw span:nth-child(2){
     width: 25px;
     transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
 }
 #home .btm-arw span:nth-child(3){
     width: 12px;
     transform: rotate(-45deg) translate(6px, 9px);
+    -webkit-transform: rotate(-45deg) translate(6px, 9px);
 }
 /*-------------------------------------------------------------------------------------------------*/
 
@@ -272,7 +275,6 @@ section{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    min-height: 100vh;
 }
 #about .row{
     width: 80%;
@@ -329,9 +331,53 @@ section{
 }
 #projects .col-10:hover .col-12{
     transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
 }
 #projects .col-10:hover i{
     transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+
+/*----------------------------Contact ----------------------------------*/
+#contact{
+    min-height: 100vh;;
+}
+#contact .row{
+    background-color: #f8f9fa;
+    width: 80%;
+    margin: auto;
+}
+#contact .col-10:first-child{
+    background-color: #fff;
+    padding: 1.5em;
+    border-radius: 10px;
+    width: 90%;
+}
+#contact .col-10 h6{
+    line-height: 2em;
+    font-size: 1.1em;
+}
+#contact .col-10 h6 strong{
+    letter-spacing: 1px;
+}
+#contact .col-10 a{
+    color: #3e64ff;
+}
+#contact .col-10 a:hover{
+    text-decoration: none;
+}
+#contact input{
+    border-radius: 20px;
+}
+#contact button{
+    background-color: #3e64ff!important;
+    border-radius: 20px;
+}
+#contact .submit-text{
+    visibility: hidden;
+    background: #009900;
+    color: white;
+    transition: 0.4s;
 }
 
 

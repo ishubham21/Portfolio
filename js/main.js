@@ -1,3 +1,16 @@
+// Your web app's Firebase configuration
+var firebaseConfig = {
+    apiKey: "AIzaSyAulhOSa0lJLEr_EhxAhl3iDzu3OnnJxoA",
+    authDomain: "portfolio-contact-e9052.firebaseapp.com",
+    databaseURL: "https://portfolio-contact-e9052.firebaseio.com",
+    projectId: "portfolio-contact-e9052",
+    storageBucket: "portfolio-contact-e9052.appspot.com",
+    messagingSenderId: "275832139996",
+    appId: "1:275832139996:web:acc303120dfe58ce7ec419"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
 //Get rid of Preloader
 // window.addEventListener('load', () => {
 //     var loader = document.querySelector(".loader"); //on class 'loader'
@@ -51,3 +64,44 @@ var typed = new Typed('#typed', {
     loop: true,
     backDelay: 500
 });
+
+/*Firebase*/
+// Reference messages collection
+var messagesRef = firebase.database().ref('messages');
+
+// Listen for form submit
+document.querySelector('form').addEventListener('submit', submitForm);
+
+// Submit form
+function submitForm(e) {
+    e.preventDefault();
+
+    // Get values
+    var name = getInputVal('form-name');
+    var email = getInputVal('form-email');
+    var sub = getInputVal('form-sub');
+    var message = getInputVal('form-msg');
+
+    // Save message
+    saveMessage(name, email, sub, message);
+
+    // Clear form
+    document.querySelector('form').reset();
+    document.querySelector(".submit-text").style.visibility = "visible";
+}
+
+// Function to get get form values
+function getInputVal(id) {
+    return document.getElementById(id).value;
+}
+
+// Save message to firebase
+function saveMessage(name, email, sub, message) {
+    var newMessageRef = messagesRef.push();
+    newMessageRef.set({
+        name: name,
+        email: email,
+        sub: sub,
+        message: message
+    });
+}
