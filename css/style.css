@@ -91,6 +91,7 @@ body{
     margin: 6px 0;
     border-radius: 50%;
     margin-left: auto;
+    transition: all 0.5s;
 }
 .nav-ham span:nth-child(1){
     width: 30px;
@@ -109,9 +110,9 @@ body{
 }
 .nav-menu{
     position: absolute;
-    top: 0;
+    top: 9vh;
     bottom: 0;
-    height: 100vh;
+    height: 82vh;
     width: 100%;
     display: none;
     align-items: center;
@@ -132,6 +133,29 @@ body{
 .make-visible{
     display: flex;
 }
+    /*Hover Animations*/
+.nav-container:hover span:first-child {
+   opacity: 0;
+}
+.nav-container:hover span:nth-child(2) {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+}
+.nav-container:hover span:nth-child(3) {
+    opacity: 0;
+}
+   
+     /*On-click animations*/
+.cross-icon span:first-child {
+  -webkit-transform: rotate(-45deg) translate(-5px, 9px);
+          transform: rotate(-45deg) translate(-5px, 9px);
+}
+.cross-icon span:nth-child(2) {opacity: 0;}
+.cross-icon span:nth-child(3) {
+  -webkit-transform: rotate(45deg) translate(0px, -9px) scale(0.8);;
+          transform: rotate(45deg) translate(0px, -9px) scale(0.8);
+}
+
 /*--------------------------------------------Navbar ends here---------------------------------*/
 
 
