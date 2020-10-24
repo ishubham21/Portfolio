@@ -20,6 +20,7 @@ function navHam(){
     for (let i = 0; i < navLinks.length; i++) {
         navLinks[i].addEventListener("click", () => {
             navMenu.classList.remove("make-visible");
+            hamBurger.classList.toggle("cross-icon");
         });
 
         //for animations
