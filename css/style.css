@@ -133,15 +133,6 @@ body{
 .make-visible{
     display: flex;
 }
-    /*Hover Animations*/
-.nav-container:hover span:first-child {
-   -webkit-transform: translateY(8px);
-           transform: translateY(8px);
-}
-.nav-container:hover span:nth-child(3) {
-    -webkit-transform: translateY(-8px);
-            transform: translateY(-8px);
-}
    
      /*On-click animations*/
 .cross-icon span:first-child {
@@ -231,5 +222,13 @@ body{
              -o-transform: translateX(0px);
            -moz-transform: translateX(0px);
         -webkit-transform: translateX(0px);
+    }
+}
+@keyframes inFromBottom{
+    0%{
+        transform: translateY(200px);
+    }
+    100%{
+        transform: translateY(0);
     }
 }
