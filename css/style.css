@@ -13,7 +13,7 @@ body{
     scroll-behavior: smooth;
 }
 
-/*-------------------------------------------Loader------------------------------------------------*/
+/*---------------------------------------------Loader------------------------------------------------*/
 .loader{
     background-color: #000;
     min-height: 100vh;
@@ -38,8 +38,26 @@ body{
 /*-------------------------------------------Loader Ends Here---------------------------------------*/
 
 
+/*--------------------------------------------Scroll-bar---------------------------------------------*/
 
-/*-----------------------------------------------Navbar---------------------------------------------*/
+::-webkit-scrollbar {
+    width: 8px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #555; 
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #333; 
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+
+
+
+/*-------------------------------------------------Navbar-----------------------------------------------*/
 .navbar{
     justify-content: flex-end;
     min-width: 100vw;
@@ -109,7 +127,7 @@ body{
     }
 }
 .nav-menu{
-    position: absolute;
+    position: fixed;
     top: 9vh;
     bottom: 0;
     height: 82vh;
@@ -145,6 +163,13 @@ body{
           transform: rotate(45deg) translate(0px, -9px) scale(0.8);
 }
 
+.nav-scrolled{
+    background-color:rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: .3s all ease-out;
+            transition: .3s all ease-out
+}
+
 /*--------------------------------------------Navbar ends here---------------------------------*/
 
 
@@ -160,14 +185,48 @@ body{
     width: 50%;
     opacity: 0.1;
 }
+/* @media (max-width: 500px){
+    .overlay{
+        width: 100%;
+    }
+} */
 /*------------------------------------------------------------------------------------------------*/
 
 
+section{
+    min-height: 100vh;
+}
 
 
+/*---------------------------------------------Home----------------------------------------------*/
 
-
-
+#home p{
+    font-size: 2em;
+    font-weight: 700;
+    color: #3e64ff;
+    line-height: 0.5em;
+}
+#home h1{
+    font-weight: 800;
+    font-size: 3em !important;
+}
+#home h3{
+    font-weight: 700;
+}
+@media (max-width: 500px){
+    p{
+        font-size: 1.8em !important;
+    }
+}
+@media (max-width: 340px){
+    h1{
+        font-size: 2.8em !important;
+    }
+}
+#home #typed{
+    color: #3e64ff;
+    font-weight: 700;
+}
 
 
 /*-------------------------------------------------------------Underline from left---------------------------------------------*/
@@ -199,6 +258,7 @@ body{
 .underline-left:hover:before, .underline-left:focus:before, .underline-left:active:before {
   right: 40%;
 }
+
 
 
 /*---------------------------------------------------------------------Animations--------------------------------------------------*/
