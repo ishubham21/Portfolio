@@ -34,7 +34,7 @@ function navHam(){
     navMenu.style.animation = "inFromBottom 1s";
 
     //Changing the nav upon scroll
-    $(window).scroll(function () {
+    $(window).scroll( () => {
         if ($(".navbar").offset().top > 50) {
             $(".fixed-top").addClass("nav-scrolled");
         } else {
