@@ -135,14 +135,12 @@ body{
 }
     /*Hover Animations*/
 .nav-container:hover span:first-child {
-   opacity: 0;
-}
-.nav-container:hover span:nth-child(2) {
-    -webkit-transform: scale(1.4);
-            transform: scale(1.4);
+   -webkit-transform: translateY(8px);
+           transform: translateY(8px);
 }
 .nav-container:hover span:nth-child(3) {
-    opacity: 0;
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
 }
    
      /*On-click animations*/
