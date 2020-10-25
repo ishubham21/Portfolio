@@ -28,7 +28,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: opacity 2s 2s ease-in-out;
+    transition: opacity 1.5s 1.5s ease-in-out;
     z-index: 100;
 }
 .loader img{
