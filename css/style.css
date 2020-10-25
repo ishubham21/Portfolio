@@ -22,7 +22,7 @@ body{
     min-width: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -202,6 +202,7 @@ body{
 section{
     width: 100%;
     overflow-x: hidden;
+    padding-bottom: 20px;
 }
 /*------------------------------------------------------------------------------------------------*/
 
