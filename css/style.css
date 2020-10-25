@@ -368,6 +368,9 @@ section{
 #contact .col-10:nth-child(1){
     box-shadow:  0.05rem 0.05rem 0.15rem rgba(0, 0, 0, 0.15) !important;
 }
+
+
+/*----------------------------My details  ----------------------------------*/
 #developer-name p{
     font-size: 1.5em;
 }
