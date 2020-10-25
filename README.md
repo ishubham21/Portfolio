@@ -1,9 +1,3 @@
-# Portfolio
-Well, go ahead..
-.
-.
-.
-.
-Under Development
-Todo: Animations-Firebase-Improvements(Minor)
+## Portfolio
+Well, this is my portfolio website...
 
