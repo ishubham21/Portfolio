@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kufam:wght@500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800&display=swap');
@@ -295,7 +295,7 @@ section{
     margin: auto;
 }
 #projects .row .col-10 .col-12{
-    box-shadow: 0rem 0.05rem 0.15rem rgba(0, 0, 0, 0.15) !important;
+    box-shadow: 0.05rem 0.05rem 0.15rem rgba(0, 0, 0, 0.15) !important;
     padding: 20px;
     transition: 0.3s;
     border-radius: 5px;
@@ -343,43 +343,38 @@ section{
 #contact{
     min-height: 100vh;;
 }
-#contact .row{
-    background-color: #f8f9fa;
-    width: 80%;
-    margin: auto;
+#contact .col-10 h4{
+    font-weight: 600;
 }
-#contact .col-10:first-child{
-    background-color: #fff;
-    padding: 1.5em;
-    border-radius: 10px;
-    width: 90%;
+#contact form label{
+    font-size: 0.9em;
+    font-weight: 500;
 }
-#contact .col-10 h6{
-    line-height: 2em;
+#contact form input::placeholder, textarea::placeholder{
     font-size: 0.8em;
 }
-#contact .col-10 h6 strong{
-    letter-spacing: 1px;
-}
-#contact .col-10 a{
+#contact form button{
+    background-color: #fff;
     color: #3e64ff;
+    transition: all 0.4s;
+    border: 1.5px solid #3e64ff;
+    font-weight: 600;
 }
-#contact .col-10 a:hover{
-    text-decoration: none;
+#contact form button:hover{
+    background-color: #3e64ff;
+    color: #fff;
 }
-#contact input{
-    border-radius: 20px;
+#contact .col-10{
+    padding: 25px;
+    border-radius: 5px;
 }
-#contact button{
-    background-color: #3e64ff!important;
-    border-radius: 20px;
+#contact .col-10:first-child{
+    box-shadow:  0.05rem 0.05rem 0.15rem rgba(0, 0, 0, 0.15) !important;
 }
-#contact .submit-text{
-    visibility: hidden;
-    background: #009900;
-    color: white;
-    transition: 0.4s;
+#contact .col-10:nth-child(2){
+   
 }
+
 
 
 /*--------------------------------------Underline from left-----------------------------------------*/
