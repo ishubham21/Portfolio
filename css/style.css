@@ -28,12 +28,12 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: opacity 2s 3s ease-in-out;
+    transition: opacity 1s 1s ease-in-out;
     z-index: 100;
 }
 .loader img{
     width: 60%;
-    animation: fade_in 5s; 
+    animation: fade_in 3s; 
 }
 .load-finish{
     opacity: 0;
