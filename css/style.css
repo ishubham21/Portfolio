@@ -405,7 +405,8 @@ section{
 .underline-left:hover:before, .underline-left:focus:before, .underline-left:active:before {
   right: 40%;
 }
-/*-------------------------------------------------------------------------------------------------*/
+/*-----------------------*/
+
 /* Underline From Center */
 .underline-center {
   display: inline-block;
@@ -436,9 +437,9 @@ section{
   left: 0;
   right: 0;
 }
-/*-------------------------------------------------------------------------------------------------*/
+/*-------------------*/
 
-/*---------------------------------------------------------------------Animations--------------------------------------------------*/
+/*-----Animations----*/
 @keyframes fade_in{
     0%{
         opacity: 0;
@@ -478,3 +479,4 @@ section{
         -webkit-transform: translateY(20px);
     }
 }
+/*This marks the end*/
