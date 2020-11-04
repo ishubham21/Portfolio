@@ -326,7 +326,7 @@ section{
     -webkit-transform: scale(1.2);
 }
 
-/*----------------------------Contact ----------------------------------*/
+/*-----Contact ------*/
 #contact .col-10 h4{
     font-weight: 600;
 }
@@ -357,7 +357,7 @@ section{
 }
 
 
-/*----------------------------My details  ----------------------------------*/
+/*------My details --------*/
 #developer-name p{
     font-size: 1.5em;
 }
@@ -376,11 +376,7 @@ section{
     }
 }
 
-
-
-
-
-/*--------------------------------------Underline from left-----------------------------------------*/
+/*-----Underline from left------*/
 .underline-left {
   display: inline-block;
   vertical-align: middle;
