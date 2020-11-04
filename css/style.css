@@ -15,9 +15,7 @@ body{
 html{
     scroll-behavior: smooth;
 }
-
-
-/*---------------------------------------------Loader--------------------------------------------*/
+/*------Loader-------*/
 .loader{
     background-color: #000;
     min-height: 100vh;
