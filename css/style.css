@@ -285,6 +285,7 @@ section{
     padding: 20px;
     transition: 0.3s;
     border-radius: 5px;
+    height: 100%;
 }
 #projects .row h1{
     font-weight: 700;
