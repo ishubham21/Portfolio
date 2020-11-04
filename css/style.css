@@ -37,10 +37,9 @@ html{
     opacity: 0;
     pointer-events: none;
 }
-/*-------------------------------------------Loader Ends Here-----------------------------------*/
+/*-----Loader Ends Here-----*/
 
-
-/*--------------------------------------------Scroll-bar----------------------------------------*/
+/*------Scroll-bar----------*/
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -52,9 +51,9 @@ html{
 ::-webkit-scrollbar-thumb:hover {
     background: #333; 
 }
-/*---------------------------------------------------------------------------------------------*/
+/*----- -----------------------*/
 
-/*----------------------------------------Typography-------------------------------------------*/
+/*------Typography---------*/
 .ttl-txt{
     font-weight: 700;
     font-size: 3.5em;
@@ -64,7 +63,7 @@ html{
         font-size: 3em;
     }
 }
-/*-------------------------------------------------Navbar--------------------------------------*/
+/*-----Navbar----------*/
 .navbar{
     justify-content: flex-end;
     min-width: 100vw;
@@ -95,14 +94,10 @@ html{
     background: #3e64ff;
     z-index: -1;
     -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+            transform: translateY(-50%);
     -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    border-radius: 50%;
+            border-radius: 50%;
 }
-
 .nav-container{
     display: flex;
     align-items: center;
@@ -176,11 +171,9 @@ html{
     -webkit-transition: .3s all ease-out;
             transition: .3s all ease-out
 }
-/*--------------------------------------------Navbar ends here----------------------------------*/
+/*------Navbar ends here------*/
 
-
-
-/*--------------------------------------------This is overlay------------------------------------*/
+/*-----Blue overlay------*/
 .overlay{
     position: absolute;
     top: 0;
