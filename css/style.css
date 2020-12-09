@@ -37,6 +37,7 @@
 .dark-mode .form-area span a{
     background-color: #232323!important;
 }
+/*----------------*/
 
 *{
     margin: 0;
@@ -46,6 +47,7 @@ body{
     font-family: 'Montserrat';
     font-weight: 400;
     overflow-x: hidden;
+    transition: 0.4s;
 }
 html{
     scroll-behavior: smooth;
