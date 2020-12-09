@@ -104,3 +104,15 @@ function saveMessage(name, email, sub, message) {
         message: message
     });
 }
+
+const darkBtn = document.querySelector('#dark-mode');
+const body = document.querySelector('body');
+darkBtn.addEventListener('click', () => {
+    if(darkBtn.checked){
+         body.classList.add('dark-mode');
+    }
+    else{
+        body.classList.remove('dark-mode');
+    }
+});
+//body.classList.contains('dark-mode')
