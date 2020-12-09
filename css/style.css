@@ -36,6 +36,7 @@
 }
 .dark-mode .form-area span a{
     background-color: #232323!important;
+    transition: 0.2s;
 }
 /*----------------*/
 
@@ -47,7 +48,7 @@ body{
     font-family: 'Montserrat';
     font-weight: 400;
     overflow-x: hidden;
-    transition: 0.4s;
+    transition: 0.2s;
 }
 html{
     scroll-behavior: smooth;
@@ -402,6 +403,7 @@ section{
     color: #3e64ff!important;
     background-color: #fff;
     padding: 0.3em;
+    transition: 0.2s;
     border-radius: 20px;
 }
 #developer-name p a:hover{
@@ -479,7 +481,7 @@ section{
 .switch {
   position: relative;
   display: inline-block;
-  width: 30px;
+  width: 36px;
   height: 14px;
 }
 
@@ -504,8 +506,8 @@ section{
 .slider:before {
   position: absolute;
   content: "";
-  height: 15px;
-  width: 10px;
+  height: 14px;
+  width: 14px;
   left: 0px;
   bottom: 0px;
   background-color: white;
@@ -522,9 +524,9 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+  -webkit-transform: translateX(22px);
+  -ms-transform: translateX(22px);
+  transform: translateX(22px);
 }
 
 /* Rounded sliders */
