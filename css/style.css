@@ -34,6 +34,10 @@
 .dark-mode .col-12, .dark-mode #contact .form-cont{
     border: 1px solid #fff!important;
 }
+.dark-mode .form-area span a{
+    background-color: #232323!important;
+}
+
 *{
     margin: 0;
     padding: 0;
