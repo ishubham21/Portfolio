@@ -1,5 +1,5 @@
 ## Portfolio
-Heya, Visitor. So [this](https://ishubham21.github.io/Portfolio) is my portfolio website which lists my elevator-pitch, projects done by me and a contact form which is connected to my Google's Firebase Database.
+Heya, visitor. So [this](https://ishubham21.github.io/Portfolio) is my portfolio website which lists my elevator-pitch, projects done by me and a contact form which is connected to my Google's Firebase Database.
 
 Well, well. This isn't it. I've recently added a button to toggle dark-mode also. Do check it out!
 
