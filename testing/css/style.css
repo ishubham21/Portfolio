@@ -318,7 +318,7 @@ section{
     width: 90%;
     margin: auto;
 }
-#projects .row .col-10 .col-12{
+#projects .row .col-11 .col-12{
     box-shadow: 0.05rem 0.05rem 0.15rem rgba(0, 0, 0, 0.15) !important;
     padding: 20px;
     transition: 0.3s;
@@ -352,14 +352,14 @@ section{
 #projects .row .col-12 a{
     text-decoration: none;
 }
-#projects .col-10 i{
+#projects .col-11 i{
     transition: 0.3s;
 }
-#projects .col-10:hover .col-12{
+#projects .col-11:hover .col-12{
     transform: translateY(-10px);
     -webkit-transform: translateY(-10px);
 }
-#projects .col-10:hover i{
+#projects .col-11:hover i{
     transform: scale(1.2);
     -webkit-transform: scale(1.2);
 }
