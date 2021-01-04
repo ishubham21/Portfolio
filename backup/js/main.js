@@ -116,14 +116,3 @@ darkBtn.addEventListener('click', () => {
     }
 });
 //body.classList.contains('dark-mode')
-
-var expandProject = document.querySelector('#expand')
-var modal = document.querySelector('.project-modal')
-expandProject.addEventListener('click', () => {
-    modal.style.display = 'block'
-})
-
-var closeProject = document.querySelector('#closeModal')
-closeProject.addEventListener('click', () => {
-    modal.style.display = 'none'
-})

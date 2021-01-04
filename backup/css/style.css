@@ -38,9 +38,6 @@
     background-color: #232323!important;
     transition: 0.2s;
 }
-.dark-mode #projects .project-modal{
-    background-color: #000;
-}
 /*----------------*/
 
 *{
@@ -83,12 +80,10 @@ html{
 /*------Scroll-bar----------*/
 ::-webkit-scrollbar {
     width: 8px;
-    
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: #555; 
-    border-radius: 10px;
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
@@ -319,14 +314,11 @@ section{
 
 
 /*---------Projects----------*/
-#projects{
-    position: relative;
-}
 #projects .row{
     width: 90%;
     margin: auto;
 }
-#projects .row .col-11 .col-12{
+#projects .row .col-10 .col-12{
     box-shadow: 0.05rem 0.05rem 0.15rem rgba(0, 0, 0, 0.15) !important;
     padding: 20px;
     transition: 0.3s;
@@ -360,51 +352,16 @@ section{
 #projects .row .col-12 a{
     text-decoration: none;
 }
-#projects .col-11 i{
+#projects .col-10 i{
     transition: 0.3s;
 }
-#projects .col-11:hover .col-12{
+#projects .col-10:hover .col-12{
     transform: translateY(-10px);
     -webkit-transform: translateY(-10px);
 }
-#projects .col-11:hover i{
+#projects .col-10:hover i{
     transform: scale(1.2);
     -webkit-transform: scale(1.2);
-}
-#projects .project-modal{
-    overflow: scroll;
-    height: 80vh;
-    background-color: #fff;
-    z-index: 99;
-    box-shadow: 0.05rem 0.05rem 0.15rem rgba(0, 0, 0, 0.15) !important;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
-    transition: 1s ease-in;
-    border: 1.5px solid #3e64ff;
-    border-radius: 20px;
-}
-#projects .project-modal .row{
-    justify-content: center;
-    width: 100%;
-    margin: 0;
-    animation: fade_in 0.4s 0s ease-in;
-}
-
-@media (max-width: 500px){
-    #projects .project-modal .col-11{
-        flex: 0 0 97%!important;
-        max-width: 97%!important;
-        padding: 0;
-    }
-}
-@media (min-width: 500px){
-    #projects #closeModal{
-        position: static;
-        bottom: 10px;
-    }
 }
 
 /*-----Contact ------*/
