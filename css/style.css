@@ -9,7 +9,7 @@
 } */
 /*-----Dark-Mode------*/
 .dark-mode{
-    background-color: #232323;
+    background-color: #121212;
     color: #fff;
 }
 .dark-mode .navbar-brand, .dark-mode .nav-container .nav-ham span, .dark-mode .abt-desc, .dark-mode .col-12 .text-black-50{
@@ -23,23 +23,23 @@
 }
 .dark-mode .nav-scrolled{
     background-color: #fff;
-    color: #000;
+    color: #121212;
 }
 .dark-mode .nav-scrolled .navbar-brand span:nth-child(2){
-    color: #000;
+    color: #121212;
 }
 .dark-mode .nav-scrolled .nav-container .nav-ham span{
-    background-color: #000!important;
+    background-color: #121212!important;
 }
 .dark-mode .col-12, .dark-mode #contact .form-cont{
     border: 1px solid #fff!important;
 }
 .dark-mode .form-area span a{
-    background-color: #232323!important;
+    background-color: #121212!important;
     transition: 0.2s;
 }
 .dark-mode #projects .project-modal{
-    background-color: #000;
+    background-color: #121212;
 }
 /*----------------*/
 
@@ -385,7 +385,7 @@ section{
     display: none;
     transition: 1s ease-in;
     border: 1.5px solid #3e64ff;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 #projects .project-modal .row{
     justify-content: center;
