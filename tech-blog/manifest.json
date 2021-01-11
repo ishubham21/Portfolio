@@ -1,0 +1,23 @@
+{
+    "name": "Shubham's Tech Blog",
+    "short_name": "Tech Blog",
+    "background_color": "#000",
+    "theme_color": "#000",
+    "description": "Technical blogs at your disposal.",
+    "start_url": "index.html",
+    "scope": "./",
+    "icons": [
+        {
+            "src": "imgs/logo.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable any"
+        },
+        {
+            "src": "imgs/logo.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "display": "standalone"
+}
