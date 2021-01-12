@@ -10,6 +10,5 @@ I've recently added a button at the bottom to enable/diable dark-mode on this we
 Also, I'd love to hear back your feedback about my work and would be more than happy to learn from them.
 
 
-
-
+This is to troubleshoot git.
 
